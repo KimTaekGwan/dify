@@ -981,7 +981,7 @@ services:
     ports:
       - "9099:9099"
     volumes:
-      - ${PIPELINES_LOCAL_DATA:-/app/pipelines}:/app/pipelines
+      - /Users/ktg/Desktop/all/database/pipelines:/app/pipelines:rw
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: always
